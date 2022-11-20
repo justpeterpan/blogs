@@ -21,11 +21,10 @@ defineProps<{
 </script>
 
 <template>
-  <nuxt-img
+  <img
     :src="`/img/${useNormalizeImageName(blog.name)}.png`"
     :alt="blog.name"
     loading="lazy"
-    :quality="80"
     class="w-screen mb-4 rounded-xl saturate-0 group-hover:saturate-100"
   />
   <div class="font-bold text-lg pb-4">
